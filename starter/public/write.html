@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Add songs!</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script defer src="/__/firebase/8.3.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.3.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="/__/firebase/8.2.6/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.2.6/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.2.6/firebase-database.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  </head>
+  
+  <body>
+    <section class="hero is-small is-primary has-text-centered">
+      <div class="hero-body">
+        <p class="title">
+          Welcome to Song Finder!
+        </p>
+        <p class="subtitle">
+          add songs to the database :)
+        </p>
+      </div>
+    </section>
+    
+    <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
+      <ul>
+        <li><a href="index.html">Search</a></li>
+        <li class="is-active"><a href="write.html" aria-current="page">Add</a></li>
+      </ul>
+    </nav>
+    
+    <div class="container">
+      <section class="section">
+        <h1 class="title">Add Songs</h1>
+        
+        <h2 class="subtitle">
+          What is the name of the song?
+        </h2>
+        <input id="song-input" class="input is-primary is-large" type="text" placeholder="Enter song name">
+        
+        <p><br></p>
+        
+        <h2 class="subtitle">
+          Artist of the song?
+        </h2>
+        <input id="artist-input" class="input is-primary is-large" type="text" placeholder="Enter artist name">
+        
+        <p><br></p>
+        
+        <h2 class="subtitle">
+          What is the genre?
+        </h2>
+        <input id="genre-input" class="input is-primary is-large" type="text" placeholder="Enter the genre">
+        
+        <p><br></p>
+        
+        <h2 class="subtitle">
+          What emotion do you feel from this song?
+        </h2>
+        <input id="emotion-input" class="input is-primary is-large" type="text" placeholder="Enter the emotion">
+        
+        <p><br></p>
+        
+        <h2 class="subtitle">
+          What is the spotify link?
+        </h2>
+        <input id="link-input" class="input is-primary is-large" type="text" placeholder="Enter the spotify link">
+        
+        <p><br></p>
+        
+        <h2 class="subtitle">
+          What is the cover image link?
+        </h2>
+        
+        <input id="img-input" class="input is-primary is-large" type="text" placeholder="Enter the cover image link">
+            
+        <div class="input-btn mt-4">
+          <button id="btn" class="button is-large">Enter</button>
+        </div>  
+        <script src="js/write.js" defer></script>
+      </section>
+    </div>
+  </body>
+</html>
